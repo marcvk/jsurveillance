@@ -1,0 +1,1 @@
+//ScalaJSExample().main()

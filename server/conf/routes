@@ -1,0 +1,15 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET         /                           com.vankempen.jsurveillance.controllers.Application.index
+
+#
+# REST API
+#
+GET         /api/cameras                com.vankempen.jsurveillance.controllers.Application.getCameras
+
+# Prefix must match `play.assets.urlPrefix`
+GET        /assets/*file                 controllers.Assets.at(file)
+GET        /versionedAssets/*file        controllers.Assets.versioned(path="/public", file: Asset)
